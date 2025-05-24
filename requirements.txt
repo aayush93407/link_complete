@@ -1,0 +1,8 @@
+Flask
+requests
+beautifulsoup4
+spacy
+selenium
+webdriver-manager
+chromedriver-autoinstaller
+gunicorn
