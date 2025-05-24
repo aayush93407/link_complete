@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: linkedin-quiz-app
+    env: python
+    buildCommand: |
+      pip install -r requirements.txt
+      python -m spacy download en_core_web_sm
+    startCommand: gunicorn app:app
+    envVars:
+      - key: MISTRAL_API_KEY
+        value: your_mistral_api_key_here
